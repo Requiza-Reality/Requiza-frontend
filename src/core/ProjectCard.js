@@ -10,7 +10,7 @@ const ProjectCard=({project})=>{
            <div className="p-3">
                <img src={project.thumbnail} width="100%" height="" style={{maxHeight:"300px"}}></img>
            </div>
-           <div className="card-body" style={{fontFamily:"serif"}}>
+           <div className="card-body text-wrap" style={{fontFamily:"serif"}}>
                <div className=" text-muted">{project.location}</div>
                <div className="h6 lead text-warning" style={{color:""}}>Starting from {project.options[0].price}Cr.</div>
                <ul className="list-group list-group-horizontal-sm ">

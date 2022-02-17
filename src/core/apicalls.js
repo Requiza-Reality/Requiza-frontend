@@ -1,5 +1,5 @@
 //import {API} from "../config"
-const API="http://localhost:8000/api"
+const API=process.env.REACT_APP_API_URL;
 
 export const listProjects=()=>{
     return fetch(`${API}/projects`,{

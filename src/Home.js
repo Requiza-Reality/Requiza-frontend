@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react"
+import React,{useState,useEffect,useRef} from "react"
 import { Link } from "react-router-dom"
 import {Navbar,Container,Form,Nav,NavDropdown,FormControl,Button} from "react-bootstrap"
 import {listProjects,getSearchProject} from "./core/apicalls"
@@ -20,11 +20,14 @@ const Home=(props)=>{
   const [loading,setLoading]=useState(false)
   const [showLeadForm,setShowLeadForm]=useState(false)
 
+  const count=useRef(0)
+
   const theme='#545b5b'
 
-  const Bounce=styled.div`animation:6s ${keyframes`${ani}`}`
+  const Bounce=styled.div`animation:6s ${keyframes`${zoomInRight}`}`
 
- const listSearchProjects=()=>{
+ const listSearchProjects=(e)=>{
+   e.preventDefault()
    getSearchProject(search).then(data=>{
      if(data.error)
      {
@@ -58,26 +61,26 @@ const Home=(props)=>{
 
   useEffect(()=>{
    listAllProjects()
-   setLoading(true)
+   
    setTimeout(()=>{
      setLoading(false)
-   },6000)
+   },7000)
    setTimeout(()=>{
     setShowLeadForm(true)
    },10000)
-  },[props])
+ },[])
 
   const topNav=()=>(
     <div>
-      <Navbar bg="" expand="lg" variant="dark" fixed="top" style={{backgroundColor:theme}} className="shadow-lg">
+      <Navbar bg="" expand="lg" variant="dark" fixed="top" style={{backgroundColor:theme}} className="shadow-lg p-0">
         <Container fluid>
-          <Navbar.Brand href="/">
-            <img src="/logo-2.png" className="rounded" alt="" width="100%" height="70px" style={{borderRadius:"15px"}} />
+          <Navbar.Brand href="/" className="">
+            <img src="/logo-2.png" className="rounded" alt="" width="100%" height="60px" style={{borderRadius:"15px"}} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" className="text-light" />
-          <Navbar.Collapse id="navbarScroll" className="text-light">
+          <Navbar.Toggle aria-controls="navbarScroll" className="text-warning" />
+          <Navbar.Collapse id="navbarScroll" className="">
   
-            <Form className="d-flex mx-auto col-6">
+            <Form className="d-flex mx-auto col-6" onSubmit={listSearchProjects}>
               <FormControl
                 type="search"
                 placeholder="Search"
@@ -90,11 +93,11 @@ const Home=(props)=>{
             </Form>
             <Nav
               className="me-2 mx-auto my-2 my-lg-0 d-flex"
-              style={{ maxHeight: '100px' }}
+              style={{ maxHeight: '100px'}}
               navbarScroll
             >
-              <Nav.Link href="/" className="text-light">About Us</Nav.Link>
-              <Nav.Link href="/" className="text-light">Contact Us</Nav.Link>
+              <Nav.Link href="/aboutus" className="text-warning">About Us</Nav.Link>
+              <Nav.Link href="/" className="text-warning">Contact Us</Nav.Link>
               
             </Nav>
           </Navbar.Collapse>
@@ -110,7 +113,7 @@ const Home=(props)=>{
                 placeholder="Search"
                 value={search}
                 onChange={handleSearchChange}
-                className="me-2 mx-auto d-flex col-12"
+                className="me-2 mx-auto d-flex"
                 aria-label="Search"
               />
               <Button variant="outline-warning" onClick={listSearchProjects}><BsSearch /></Button>
@@ -134,8 +137,8 @@ const Home=(props)=>{
            </div>
           ):
           (
-            <div className="">
-           {topNav()}
+            <div className=" g-0" style={{maxWidth:"100vw"}}>
+            <div>{topNav()}</div>
            
            {showLeadForm?(<LeadForm/>):null}
            <br/>
@@ -143,13 +146,13 @@ const Home=(props)=>{
            <br/>
            <br/>
            
-           <div className="col-12 m-0 p-0" style={{backgroundColor:theme,width:"100vw"}}>{mobSearch()}</div>
-          <div className="row  d-flex justify-content-center">
+           <div className="col-12 m-0 p-0" style={{backgroundColor:theme}}>{mobSearch()}</div>
+          <div className="row justify-content-center col-12 m-0 p-0">
           {project.map((p,i)=>(
-            <div className=" col-11 col-md-4 p-3"> <Link to={`/projects/${p._id}`} style={{textDecoration:"none"}}><ProjectCard project={p} style={{textDecoration:"none"}}></ProjectCard></Link></div>
+            <div className=" col-11 col-md-6 col-lg-4 p-3"> <Link to={`/projects/${p._id}`} style={{textDecoration:"none"}}><ProjectCard project={p} className="" style={{textDecoration:"none"}}></ProjectCard></Link></div>
            ))}
           </div>
-          <div>{footer()}</div>
+          <div className="g-0">{footer()}</div>
         </div>
           )}
         </div>

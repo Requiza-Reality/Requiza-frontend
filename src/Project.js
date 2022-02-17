@@ -49,8 +49,8 @@ const Project=(props)=>{
         <div>
           <Navbar bg="" expand="lg" variant="dark" fixed="top" style={{backgroundColor:theme,zIndex:"0"}} className="shadow-lg ">
             <Container fluid>
-              <Navbar.Brand href="#">
-                <img src="/logo-2.png" className="rounded" alt="" width="100%" height="70px" style={{borderRadius:"15px"}} />
+              <Navbar.Brand href="/">
+                <img src="/logo-2.png" className="rounded" alt="" width="100%" height="60px" style={{borderRadius:"15px"}} />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" className="text-light" />
               <Navbar.Collapse id="navbarScroll" className="text-light">
@@ -60,8 +60,8 @@ const Project=(props)=>{
                   style={{ maxHeight: '100px' }}
                   navbarScroll
                 >
-                  <Nav.Link href="#action1" className="text-light">About Us</Nav.Link>
-                  <Nav.Link href="#action2" className="text-light">Contact Us</Nav.Link>
+                  <Nav.Link href="/aboutus" className="text-warning">About Us</Nav.Link>
+                  <Nav.Link href="/" className="text-warning">Contact Us</Nav.Link>
                   
                 </Nav>
               </Navbar.Collapse>
@@ -97,7 +97,7 @@ const Project=(props)=>{
     )
 
     const amenities=()=>(
-     <div style={{backgroundColor:theme}}>
+     <div className="col-12" style={{backgroundColor:theme}}>
          <h3 className="text-light text-center p-3">Ammenities</h3>
         <div  className="row">
           {project.ammenities && project.ammenities.map((a,i)=>(
@@ -123,8 +123,12 @@ const Project=(props)=>{
     )
 
     const whatsappToast=()=>(
-      <div>
-        <ToastContainer position="bottom-end">
+      <span className="d-flex justify-content-end p-3 ">
+      <a target="_blank" href="https://wa.me/+919694318893"><span className="bg-success p-4 rounded-circle"><BsWhatsapp className="h1 text-white  " /></span></a>
+      </span>
+    )
+    {/*
+       <ToastContainer position="bottom-end">
         <Toast  bg="success" >
           <Toast.Header>
             <BsWhatsapp className="h4 text-success"/>
@@ -132,8 +136,7 @@ const Project=(props)=>{
           <Toast.Body className="text-white"><a target="_blank" href="https://wa.me/+919694318893" className="text-white">Click Here </a> to connect with us on Whatsapp.</Toast.Body>
         </Toast>
         </ToastContainer>
-      </div>
-    )
+     */}
     const footer=()=>(
       <div style={{backgroundColor:theme}}>
          <div className="p-5 show-lg"><img src="/logo-long.png" width="100%"></img></div>
@@ -147,7 +150,7 @@ const Project=(props)=>{
     )
 
     return(
-        <div className="container-fluid">
+        <div className=" col-12 m-0" style={{maxWidth:"100vw"}}>
          <div>{topNav()}</div>
          {showLeadForm?(<LeadForm/>):null}
          <br/>
@@ -179,12 +182,14 @@ const Project=(props)=>{
                style={{zIndex:"99999"}}
              />
            )}
-           <div>{amenities()}</div>
+           <div className="m-0">{amenities()}</div>
            <div className="col-10 col-md-8 mx-auto shadow-lg mt-5 rounded">{optionsTable()}</div>
            <div className="overflow-auto" onClick={openImageViewer}>{scrollingImages()}</div>
-           <div className="p-4 text-center"><button onClick={()=>{setShowLeadForm(true)}} className="btn btn-lg btn-primary ">Request a Call Back.</button></div>
+           <div className="p-4 text-center"><button onClick={()=>{setShowLeadForm(true)}} className="btn btn-lg btn-secondary text-warning" >Request a Call Back.</button></div>
 
-           <div className="p-4">{embedmap()}</div>
+           <div className="p-4 " style={{backgroundColor:theme}}>{embedmap()}</div>
+           <br/>
+           <br/>
            <div className="fixed-bottom">{whatsappToast()}</div>
            <div>{footer()}</div>
         </div>
