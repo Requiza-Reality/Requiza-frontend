@@ -8,7 +8,10 @@ import { StyleSheet, css } from 'aphrodite';
 import styled, { keyframes } from 'styled-components';
 import LeadForm from "./core/LeadForm"
 import {BsSearch} from "react-icons/bs"
+import {MdTravelExplore,MdLocationOn,MdOutlineCall,MdMarkEmailRead} from "react-icons/md"
+
 const ani=merge(zoomInRight,flipOutX)
+
 
 
 
@@ -22,7 +25,7 @@ const Home=(props)=>{
 
   const count=useRef(0)
 
-  const theme='#545b5b'
+  const theme='#191919'
 
   const Bounce=styled.div`animation:6s ${keyframes`${zoomInRight}`}`
 
@@ -72,7 +75,7 @@ const Home=(props)=>{
 
   const topNav=()=>(
     <div>
-      <Navbar bg="" expand="lg" variant="dark" fixed="top" style={{backgroundColor:theme}} className="shadow-lg p-0">
+      <Navbar bg="" expand="lg" variant="dark" fixed="top" style={{backgroundColor:theme,opacity:"0.9"}} className="shadow-lg p-0">
         <Container fluid>
           <Navbar.Brand href="/" className="">
             <img src="/logo-2.png" className="rounded" alt="" width="100%" height="60px" style={{borderRadius:"15px"}} />
@@ -96,8 +99,9 @@ const Home=(props)=>{
               style={{ maxHeight: '100px'}}
               navbarScroll
             >
+              <Nav.Link href="/" className="text-warning">Home</Nav.Link> 
+              <Nav.Link href="/projects" className="text-warning">Projects</Nav.Link>             
               <Nav.Link href="/aboutus" className="text-warning">About Us</Nav.Link>
-              <Nav.Link href="/" className="text-warning">Contact Us</Nav.Link>
               
             </Nav>
           </Navbar.Collapse>
@@ -122,9 +126,84 @@ const Home=(props)=>{
   )
 
   const footer=()=>(
-    <div style={{backgroundColor:theme}}>
-       <div className="p-5 show-lg"><img src="/logo-long.png" width="100%"></img></div>
+    <div  style={{backgroundImage:"url('/images/bg-6.jpg')"}}>
+      <div >
+        <div className="row p-2 ">
+         <div className="p-2  col-12 col-md-5">
+         <div className="  rounded shadow-lg " style={{backgroundColor:theme,opacity:"0.9"}}>
+            <div className="col-8 mx-auto" ><img src="/logo-2.png" width="100%" height="100px"></img></div>
+            <div className="col-10 mx-auto text-center text-white p-4 h5" style={{fontFamily:"serif"}}>WHY WE ARE THE BEST!<br/>
+Interior design is a process that provides its customers with a set of aesthetically pleasing but efficient solutions for a better use of the space in question. The goal of interior design is to improve the user experience by better managing the space available in the intervened environment.</div>
+          </div>
+         </div>
+
+
+
+          <div className="col-12 col-md-3  p-2" style={{backgroundColor:theme,opacity:"0.9",fontFamily:"Lobster"}}>
+            <p className="text-center text-warning h2 p-4">Offices</p>
+            <div className="p-2">
+            <div className="row p-2">
+              <div className="col-2"><MdLocationOn className="text-warning h1" /></div>
+              <div className="col-10"><p className=" text-white h4">Mumbai</p></div>
+
+            </div>
+            <div className="text-center" ><img src="/images/m.jpg" className="rounded" width="150px" height="120px"></img></div>
+            <div className="row p-2">
+              <div className="col-2"><MdLocationOn className="text-warning h1" /></div>
+              <div className="col-10"><p className=" text-white h4">Pune</p></div>
+
+            </div>
+            <div className="text-center" ><img src="/images/p.jpg" className="rounded" width="150px" height="120px"></img></div>
+
+            <div className="row p-2">
+              <div className="col-2"><MdLocationOn className="text-warning h1" /></div>
+              <div className="col-10"><p className=" text-white h4">Dubai</p></div>
+
+            </div>
+            <div className="text-center" ><img src="/images/d.jpg" className="rounded" width="150px" height="120px"></img></div>
+            </div>
+
+          </div>
+
+
+
+          <div className="p-2 col-12 col-md-4">
+          <div className="" style={{backgroundColor:theme,opacity:"0.9",fontFamily:"Lobster"}}>
+            <p className="h3 text-center text-warning p-4" style={{fontFamily:"Lobster"}}>Contact Us</p>
+            <div className="p-5">
+              <div className="row mb-3">
+                <div className="col-2"><MdOutlineCall className="h1 text-warning rounded-circle bg-white " /></div>
+                <div className="col-10">
+                  <p className="text-white h5">Call Us</p>
+                  <p className="text-warning h5">+919694318893</p>
+                </div>
+              </div>
+
+              <div className="row mb-3">
+                <div className="col-2"><MdMarkEmailRead className="h1 text-warning rounded-circle bg-white " /></div>
+                <div className="col-10">
+                <p className="text-white h5">Email Us</p>
+                  <p className="text-warning h5">requizareality@gmail.com</p>
+                </div>
+              </div>
+
+              <div className="row mb-3">
+                <div className="col-2"><MdMarkEmailRead className="h1 text-warning rounded-circle bg-white " /></div>
+                <div className="col-10">
+                  <p className="text-white h5">Sales and Marketting</p>
+                  <p className="text-warning h5">sales@requizareality.com</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+      <div style={{backgroundColor:theme}}><p className="text-center text-warning p-3 h6">Copyright © 2022 Requiza Realities</p></div>
     </div>
+
   )
     return(
         <div>
@@ -147,11 +226,14 @@ const Home=(props)=>{
            <br/>
            
            <div className="col-12 m-0 p-0" style={{backgroundColor:theme}}>{mobSearch()}</div>
-          <div className="row justify-content-center col-12 m-0 p-0">
+            <div style={{backgroundImage:"url('/images/bg-5.jpg')"}}>
+            <div className="row justify-content-center col-12 m-0 p-4" style={{backgroundColor:theme,opacity:"0.9",minHeight:"500px"}}>
           {project.map((p,i)=>(
             <div className=" col-11 col-md-6 col-lg-4 p-3"> <Link to={`/projects/${p._id}`} style={{textDecoration:"none"}}><ProjectCard project={p} className="" style={{textDecoration:"none"}}></ProjectCard></Link></div>
            ))}
           </div>
+            </div>
+            <br/>
           <div className="g-0">{footer()}</div>
         </div>
           )}

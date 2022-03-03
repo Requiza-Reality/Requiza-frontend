@@ -1,12 +1,12 @@
 import React,{useState,useEffect} from "react"
 
 const ProjectCard=({project})=>{
-    const theme='#545b5b'
+    const theme='#191919'
 
 
     return(
         <div className="card  shadow-lg rounded border" style={{minHeight:"500px",textDecoration:"none"}}>
-          <div className="card-header h5 text-center text-warning" style={{backgroundColor:theme,color:"#dca43f"}} >{project.name}</div>
+          <div className="card-header h5 text-center text-warning" style={{backgroundColor:theme,color:"#dca43f",opacity:"0.8"}} >{project.name}</div>
            <div className="p-3">
                <img src={project.thumbnail} width="100%" height="" style={{maxHeight:"300px"}}></img>
            </div>
