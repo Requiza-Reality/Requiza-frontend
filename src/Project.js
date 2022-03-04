@@ -5,6 +5,7 @@ import {useParams,Link} from "react-router-dom"
 import ImageViewer from "react-simple-image-viewer";
 import {Table,Toast,ToastContainer} from "react-bootstrap"
 import LeadForm from "./core/LeadForm"
+import {Carousel} from "react-responsive-carousel"
 
 import {MdTravelExplore,MdLocationOn,MdOutlineCall,MdMarkEmailRead} from "react-icons/md"
 
@@ -48,7 +49,7 @@ const Project=(props)=>{
 
     const topNav=()=>(
         <div>
-          <Navbar bg="" expand="lg" variant="dark" fixed="top" style={{backgroundColor:theme,zIndex:"0",opacity:"0.9"}} className="shadow-lg ">
+          <Navbar bg="" expand="lg" variant="dark" fixed="top" style={{backgroundColor:theme,zIndex:"1",opacity:"1"}} className="shadow-lg ">
             <Container fluid>
               <Navbar.Brand href="/">
                 <img src="/logo-2.png" className="rounded" alt="" width="100%" height="60px" style={{borderRadius:"15px"}} />
@@ -68,6 +69,18 @@ const Project=(props)=>{
               </Navbar.Collapse>
             </Container>
           </Navbar>
+        </div>
+      )
+
+      const topCarousel=()=>(
+        <div style={{backgroundColor:theme}}>
+          <Carousel interval={2000} autoPlay={true} infiniteLoop={true} showThumbs={false}>
+           
+          {project.photos && project.photos.map((photo,i)=>(
+            <div className="col-12 col-md-8 mx-auto p-5" ><img src={photo} className="rounded" height="400px" width="400px" ></img></div>
+          ))}          
+            
+          </Carousel>
         </div>
       )
 
@@ -227,18 +240,14 @@ const Project=(props)=>{
 
     return(
         <div className=" col-12 m-0" style={{maxWidth:"100vw"}}>
-         <div>{topNav()}</div>
+         <div className="p-5">{topNav()}</div>
          {showLeadForm?(<LeadForm/>):null}
          <br/>
            <br/>
            <br/>
            <br/>
            <br/>
-           <div style={{backgroundImage:"url('/images/c1.jpg')"}}>
-           <div className="mx-auto text-center" style={{backgroundColor:theme,opacity:"0.9"}}> 
-           <img src={project.thumbnail} width="90%" className="rounded p-5" style={{height:"50vh"}}></img>
-           </div>
-           </div>
+          <div>{topCarousel()}</div>
            <div className="col-12 p-3" >
                <div className="float-right col-12 text-end"><BsImages className="h1 text-secondary " onClick={openImageViewer} /></div>
 

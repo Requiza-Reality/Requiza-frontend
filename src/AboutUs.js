@@ -4,7 +4,7 @@ import {Navbar,Container,Form,Nav,NavDropdown,FormControl,Button} from "react-bo
 
 const AboutUs=()=>{
 
-    const theme='#545b5b'
+    const theme='#191919'
 
 
     const topNav=()=>(
@@ -22,8 +22,9 @@ const AboutUs=()=>{
                   style={{ maxHeight: '100px' }}
                   navbarScroll
                 >
+                  <Nav.Link href="/" className="text-warning">Home</Nav.Link>
+                  <Nav.Link href="/projects" className="text-warning">Projects</Nav.Link>
                   <Nav.Link href="/aboutus" className="text-warning">About Us</Nav.Link>
-                  <Nav.Link href="/" className="text-warning">Contact Us</Nav.Link>
                   
                 </Nav>
               </Navbar.Collapse>

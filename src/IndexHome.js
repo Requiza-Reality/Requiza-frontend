@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "react-responsive-carousel"
 import {listProjects,getSearchProject} from "./core/apicalls"
+import { zoomIn} from 'react-animations';
+import styled, { keyframes } from 'styled-components';
 
 
 import {Navbar,Container,Form,Nav,NavDropdown,FormControl,Button} from "react-bootstrap"
@@ -14,6 +16,10 @@ const IndexHome=(props)=>{
     const theme='#191919'
 
     const [projects,setProjects]=useState([])
+
+
+    const ZoomIn=styled.div`animation:3s ${keyframes`${zoomIn}`}`
+
 
 
     const listAllProjects=()=>{
@@ -61,7 +67,7 @@ const IndexHome=(props)=>{
 
       const topCarousel=()=>(
         <div style={{height:"auto"}}>
-          <Carousel interval={2000} autoPlay={true} infiniteLoop={true}> 
+          <Carousel interval={2000} autoPlay={true} infiniteLoop={true} showThumbs={false} stopOnHover={false}> 
                 <div>
                     <img src="/images/c1.jpg" width="" height="" />
                    
@@ -157,6 +163,28 @@ const IndexHome=(props)=>{
        </div>
        </div>
        
+     )
+
+     const ourServices=()=>(
+       <div style={{backgroundImage:"url('/images/bg-5.jpg')",}} >
+         <div style={{backgroundColor:theme,opacity:"0.9"}}>
+           <div className="text-center h2 text-warning" style={{fontFamily:"Lobster"}}><h2>Our Services</h2></div>
+           <div className="row p-4">
+               <div className="col">
+                 <div className="text-center "><img src="images/residential.jpg" className="border border-5 border-warning" width="200px" height="200px"></img></div>
+                 <div className="text-center h4 text-white p-2" style={{fontFamily:"Lobster"}}>Residential Property</div>
+               </div>
+               <div className="col">
+                 <div className="text-center "><img src="images/commercial.jpg" className="border border-5 border-warning" width="200px" height="200px"></img></div>
+                 <div className="text-center h4 text-white p-2" style={{fontFamily:"Lobster"}}>Commercial Property</div>
+               </div>
+               <div className="col">
+                 <div className="text-center "><img src="images/land.jpg" className="border border-5 border-warning" width="200px" height="200px"></img></div>
+                 <div className="text-center h4 text-white p-2" style={{fontFamily:"Lobster"}}>Land & other Property</div>
+               </div>
+           </div>
+         </div>
+       </div>
      )
 
      const testimonials=()=>(
@@ -309,6 +337,7 @@ Interior design is a process that provides its customers with a set of aesthetic
             <div>{sec1()}</div>
             <div>{process()}</div>
             <div>{ourProjectsMarquee()}</div>
+            <div>{ourServices()}</div>
             <div>{testimonials()}</div>
             <br/><br/>
             <div>{footer()}</div>
