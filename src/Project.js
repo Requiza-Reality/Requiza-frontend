@@ -222,9 +222,7 @@ Interior design is a process that provides its customers with a set of aesthetic
         <div className=" col-12 m-0" style={{maxWidth:"100vw"}}>
          <div className=""><TopMenu /></div>
          {showLeadForm?(<LeadForm/>):null}
-         <br/>
-           <br/>
-           <br/>
+         
           
           <div>{topCarousel()}</div>
            <div className="col-12 p-3" >

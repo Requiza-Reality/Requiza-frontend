@@ -111,6 +111,8 @@ const IndexHome=(props)=>{
                <img src="/images/d1.jpg" className="rounded mt-5" width="100%"></img>
              </div>
            </div>
+           <br/>
+           <br/>
          </div>
        </div>
      )
