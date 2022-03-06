@@ -9,7 +9,7 @@ import styled, { keyframes } from 'styled-components';
 import LeadForm from "./core/LeadForm"
 import {BsSearch} from "react-icons/bs"
 import {MdTravelExplore,MdLocationOn,MdOutlineCall,MdMarkEmailRead} from "react-icons/md"
-
+import TopMenu from "./core/TopMenu"
 const ani=merge(zoomInRight,flipOutX)
 
 
@@ -83,7 +83,7 @@ const Home=(props)=>{
           <Navbar.Toggle aria-controls="navbarScroll" className="text-warning" />
           <Navbar.Collapse id="navbarScroll" className="">
   
-            <Form className="d-flex mx-auto col-6" onSubmit={listSearchProjects}>
+            <Form className="d-none d-md-flex mx-auto col-6" onSubmit={listSearchProjects}>
               <FormControl
                 type="search"
                 placeholder="Search"
@@ -102,7 +102,8 @@ const Home=(props)=>{
               <Nav.Link href="/" className="text-warning">Home</Nav.Link> 
               <Nav.Link href="/projects" className="text-warning">Projects</Nav.Link>             
               <Nav.Link href="/aboutus" className="text-warning">About Us</Nav.Link>
-              
+              <Nav.Link href="#contact" className="text-warning">Contact Us</Nav.Link>
+
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -128,8 +129,8 @@ const Home=(props)=>{
   const footer=()=>(
     <div  style={{backgroundImage:"url('/images/bg-6.jpg')"}}>
       <div >
-        <div className="row p-2 ">
-         <div className="p-2  col-12 col-md-5">
+        <div className="row p-2 col-md-8 mx-auto ">
+         <div className="p-2  col-12 col-md-6">
          <div className="  rounded shadow-lg " style={{backgroundColor:theme,opacity:"0.9"}}>
             <div className="col-8 mx-auto" ><img src="/logo-2.png" width="100%" height="100px"></img></div>
             <div className="col-10 mx-auto text-center text-white p-4 h5" style={{fontFamily:"serif"}}>WHY WE ARE THE BEST!<br/>
@@ -139,38 +140,13 @@ Interior design is a process that provides its customers with a set of aesthetic
 
 
 
-          <div className="col-12 col-md-3  p-2" style={{backgroundColor:theme,opacity:"0.9",fontFamily:"Lobster"}}>
-            <p className="text-center text-warning h2 p-4">Offices</p>
-            <div className="p-2">
-            <div className="row p-2">
-              <div className="col-2"><MdLocationOn className="text-warning h1" /></div>
-              <div className="col-10"><p className=" text-white h4">Mumbai</p></div>
-
-            </div>
-            <div className="text-center" ><img src="/images/m.jpg" className="rounded" width="150px" height="120px"></img></div>
-            <div className="row p-2">
-              <div className="col-2"><MdLocationOn className="text-warning h1" /></div>
-              <div className="col-10"><p className=" text-white h4">Pune</p></div>
-
-            </div>
-            <div className="text-center" ><img src="/images/p.jpg" className="rounded" width="150px" height="120px"></img></div>
-
-            <div className="row p-2">
-              <div className="col-2"><MdLocationOn className="text-warning h1" /></div>
-              <div className="col-10"><p className=" text-white h4">Dubai</p></div>
-
-            </div>
-            <div className="text-center" ><img src="/images/d.jpg" className="rounded" width="150px" height="120px"></img></div>
-            </div>
-
-          </div>
+          
 
 
-
-          <div className="p-2 col-12 col-md-4">
-          <div className="" style={{backgroundColor:theme,opacity:"0.9",fontFamily:"Lobster"}}>
-            <p className="h3 text-center text-warning p-4" style={{fontFamily:"Lobster"}}>Contact Us</p>
-            <div className="p-5">
+          <div className="p-2 col-12 col-md-6">
+          <div className="rounded" style={{backgroundColor:theme,opacity:"0.9",fontFamily:"'Aref Ruqaa', serif"}}>
+            <p className="h3 text-center text-warning p-2" style={{fontFamily:"'Aref Ruqaa', serif"}}>Contact Us</p>
+            <div className="p-3">
               <div className="row mb-3">
                 <div className="col-2"><MdOutlineCall className="h1 text-warning rounded-circle bg-white " /></div>
                 <div className="col-10">
@@ -201,6 +177,7 @@ Interior design is a process that provides its customers with a set of aesthetic
 
         </div>
       </div>
+      <div className="text-white text-center h3" style={{fontFamily:"'Aref Ruqaa', serif"}}>Mumbai | Pune | Dubai</div>
       <div style={{backgroundColor:theme}}><p className="text-center text-warning p-3 h6">Copyright © 2022 Requiza Realities</p></div>
     </div>
 
@@ -217,13 +194,13 @@ Interior design is a process that provides its customers with a set of aesthetic
           ):
           (
             <div className=" g-0" style={{maxWidth:"100vw"}}>
-            <div>{topNav()}</div>
+            <div><TopMenu /></div>
            
            {showLeadForm?(<LeadForm/>):null}
            <br/>
            <br/>
            <br/>
-           <br/>
+           
            
            <div className="col-12 m-0 p-0" style={{backgroundColor:theme}}>{mobSearch()}</div>
             <div style={{backgroundImage:"url('/images/bg-5.jpg')"}}>
@@ -234,7 +211,7 @@ Interior design is a process that provides its customers with a set of aesthetic
           </div>
             </div>
             <br/>
-          <div className="g-0">{footer()}</div>
+          <div id="contact" className="g-0">{footer()}</div>
         </div>
           )}
         </div>

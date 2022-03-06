@@ -1,6 +1,7 @@
 import React from "react"
 import {Navbar,Container,Form,Nav,NavDropdown,FormControl,Button} from "react-bootstrap"
-
+import {MdTravelExplore,MdLocationOn,MdOutlineCall,MdMarkEmailRead} from "react-icons/md"
+import TopMenu from "./core/TopMenu"
 
 const AboutUs=()=>{
 
@@ -9,7 +10,7 @@ const AboutUs=()=>{
 
     const topNav=()=>(
         <div>
-          <Navbar bg="" expand="lg" variant="dark" fixed="top" style={{backgroundColor:theme,zIndex:"0"}} className="shadow-lg ">
+          <Navbar bg="" expand="lg" variant="dark" fixed="top" style={{backgroundColor:theme,zIndex:"0",opacity:"0.9"}} className="shadow-lg ">
             <Container fluid>
               <Navbar.Brand href="/">
                 <img src="/logo-2.png" className="rounded" alt="" width="100%" height="60px" style={{borderRadius:"15px"}} />
@@ -25,7 +26,8 @@ const AboutUs=()=>{
                   <Nav.Link href="/" className="text-warning">Home</Nav.Link>
                   <Nav.Link href="/projects" className="text-warning">Projects</Nav.Link>
                   <Nav.Link href="/aboutus" className="text-warning">About Us</Nav.Link>
-                  
+                  <Nav.Link href="#contact" className="text-warning">Contact Us</Nav.Link>
+
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -48,14 +50,66 @@ Her combined energy and perseverance has taken the company where it is nowadays 
       )
 
       const footer=()=>(
-        <div style={{backgroundColor:theme}}>
-           <div className="p-5 show-lg"><img src="/logo-long.png" width="100%"></img></div>
+        <div  style={{backgroundImage:"url('/images/bg-6.jpg')"}}>
+          <div >
+            <div className="row p-2 col-md-8 mx-auto ">
+             <div className="p-2  col-12 col-md-6">
+             <div className="  rounded shadow-lg " style={{backgroundColor:theme,opacity:"0.9"}}>
+                <div className="col-8 mx-auto" ><img src="/logo-2.png" width="100%" height="100px"></img></div>
+                <div className="col-10 mx-auto text-center text-white p-4 h5" style={{fontFamily:"serif"}}>WHY WE ARE THE BEST!<br/>
+ Interior design is a process that provides its customers with a set of aesthetically pleasing but efficient solutions for a better use of the space in question. The goal of interior design is to improve the user experience by better managing the space available in the intervened environment.</div>
+              </div>
+             </div>
+ 
+ 
+ 
+              
+ 
+ 
+              <div className="p-2 col-12 col-md-6">
+              <div className="rounded" style={{backgroundColor:theme,opacity:"0.9",fontFamily:"'Aref Ruqaa', serif"}}>
+                <p className="h3 text-center text-warning p-2" style={{fontFamily:"'Aref Ruqaa', serif"}}>Contact Us</p>
+                <div className="p-3">
+                  <div className="row mb-3">
+                    <div className="col-2"><MdOutlineCall className="h1 text-warning rounded-circle bg-white " /></div>
+                    <div className="col-10">
+                      <p className="text-white h5">Call Us</p>
+                      <p className="text-warning h5">+919694318893</p>
+                    </div>
+                  </div>
+ 
+                  <div className="row mb-3">
+                    <div className="col-2"><MdMarkEmailRead className="h1 text-warning rounded-circle bg-white " /></div>
+                    <div className="col-10">
+                    <p className="text-white h5">Email Us</p>
+                      <p className="text-warning h5">requizareality@gmail.com</p>
+                    </div>
+                  </div>
+ 
+                  <div className="row mb-3">
+                    <div className="col-2"><MdMarkEmailRead className="h1 text-warning rounded-circle bg-white " /></div>
+                    <div className="col-10">
+                      <p className="text-white h5">Sales and Marketting</p>
+                      <p className="text-warning h5">sales@requizareality.com</p>
+                    </div>
+                  </div>
+ 
+                </div>
+              </div>
+              </div>
+ 
+            </div>
+          </div>
+          <div className="text-white text-center h3" style={{fontFamily:"'Aref Ruqaa', serif"}}>Mumbai | Pune | Dubai</div>
+          <div style={{backgroundColor:theme}}><p className="text-center text-warning p-3 h6">Copyright © 2022 Requiza Realities</p></div>
         </div>
+ 
       )
+     
 
     return(
         <div className="container" style={{maxWidth:"100vw"}}>
-           <div>{topNav()}</div>
+           <div><TopMenu /></div>
            <br/>
            <br/>
            <br/>
@@ -65,7 +119,7 @@ Her combined energy and perseverance has taken the company where it is nowadays 
                <div className="col-5"></div>
                <div className="col-7 overflow-auto" style={{height:"80vh"}}>{text()}</div>
            </div>
-           <div className="g-0">{footer()}</div>
+           <div id="contact" className="g-0">{footer()}</div>
         </div>
     )
 }

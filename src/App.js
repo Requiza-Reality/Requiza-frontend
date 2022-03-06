@@ -7,6 +7,7 @@ import Home from "./Home"
 import Project from "./Project"
 import AboutUs from "./AboutUs"
 import IndexHome from "./IndexHome"
+import SearchResult from "./SearchResult"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
      <Route path="/projects" element={ <Home/> }></Route>
      <Route  path="/projects/:projectId" element={<Project/>}></Route>
      <Route  path="/aboutus" element={<AboutUs/>}></Route>
+     <Route  path="/projects/search/:searchkey" element={<SearchResult/>}></Route>
 
 
    </Routes>

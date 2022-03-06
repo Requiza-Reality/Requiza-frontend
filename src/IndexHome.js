@@ -5,6 +5,7 @@ import {Carousel} from "react-responsive-carousel"
 import {listProjects,getSearchProject} from "./core/apicalls"
 import { zoomIn} from 'react-animations';
 import styled, { keyframes } from 'styled-components';
+import TopMenu from "./core/TopMenu"
 
 
 import {Navbar,Container,Form,Nav,NavDropdown,FormControl,Button} from "react-bootstrap"
@@ -39,13 +40,13 @@ const IndexHome=(props)=>{
     },[props])
 
     const topNav=()=>(
-        <div>
+        <div style={{maxWidth:"100vw"}}>
           <Navbar bg="" expand="lg" variant="dark" fixed="top" style={{backgroundColor:theme,opacity:"0.9"}} className="shadow-lg p-0">
             <Container fluid>
               <Navbar.Brand href="/" className="">
                 <img src="/logo-2.png" className="rounded" alt="" width="100%" height="60px" style={{borderRadius:"15px"}} />
               </Navbar.Brand>
-              <Navbar.Toggle aria-controls="navbarScroll" className="text-warning" />
+              <Navbar.Toggle aria-controls="navbarScroll" className="text-warning " />
               <Navbar.Collapse id="navbarScroll" className="">
       
                 
@@ -57,7 +58,8 @@ const IndexHome=(props)=>{
                   <Nav.Link href="/" className="text-warning">Home</Nav.Link> 
               <Nav.Link href="/projects" className="text-warning">Projects</Nav.Link>             
               <Nav.Link href="/aboutus" className="text-warning">About Us</Nav.Link>
-                  
+              <Nav.Link href="#contact" className="text-warning">Contact Us</Nav.Link>
+ 
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -88,10 +90,7 @@ const IndexHome=(props)=>{
                     <img src="/images/c5.jpg" />
                     
                 </div>
-                <div>
-                    <img src="/images/bg-2.jpg" />
-                    
-                </div>
+                
             </Carousel>
         </div>
       )
@@ -102,7 +101,7 @@ const IndexHome=(props)=>{
            <div className="row mt-5 p-3">
              <div className="col-12 col-md-6 mx-auto text-center">
               
-               <h1 className="text-white text-center mt-5" style={{fontFamily: 'Lobster'}}>Requiza Reality</h1>
+               <h1 className="text-white text-center mt-5" style={{fontFamily:"'Aref Ruqaa', serif"}}>Requiza Reality</h1>
                <p className="text-white">
                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                </p>
@@ -119,25 +118,25 @@ const IndexHome=(props)=>{
      const process=()=>(
        <div className="mt-5" style={{backgroundImage:"url('/images/bg-2.jpg')",height:"auto"}}>
          <div style={{backgroundColor:theme,opacity:"0.9",height:"auto"}}>
-           <h1 className="text-center mt-5 p-5 text-white" style={{fontFamily:"Lobster"}}>Our Process</h1>
+           <h1 className="text-center mt-5 p-5 text-white" style={{fontFamily:"'Aref Ruqaa', serif"}}>Our Process</h1>
            <div className="row p-5">
-             <div className="col-6 col-md-3 text-center">
-                <div className="col-12 col-md-6 mx-auto bg-warning p-5 rounded-circle"><MdTravelExplore className="h1 text-white text-center" /></div>
-                <div className="h2 text-white text-center" style={{fontFamily:"Lobster"}}>Client Requirement & Budget</div>
+             <div className="col-12 col-md-3 text-center">
+                <div className="col-6 col-md-6 mx-auto bg-warning p-5 rounded-circle"><MdTravelExplore className="h1 text-white text-center" /></div>
+                <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Client Requirement & Budget</div>
              </div>
-             <div className="col-6 col-md-3 text-center">
-                <div className="col-12 col-md-6 mx-auto bg-warning p-5 rounded-circle"><FaBuilding className="h1 text-white text-center" /></div>
-                <div className="h2 text-white text-center" style={{fontFamily:"Lobster"}}>Project tour & Site visit</div>
+             <div className="col-12 col-md-3 text-center">
+                <div className="col-6 col-md-6 mx-auto bg-warning p-5 rounded-circle"><FaBuilding className="h1 text-white text-center" /></div>
+                <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Project tour & Site visit</div>
 
              </div>
-             <div className="col-6 col-md-3 text-center">
-                <div className="col-12 col-md-6 mx-auto bg-warning p-5 rounded-circle"><FaPhone className="h1 text-white text-center" /></div>
-                <div className="h2 text-white text-center" style={{fontFamily:"Lobster"}}>Meet & Agree</div>
+             <div className="col-12 col-md-3 text-center">
+                <div className="col-6 col-md-6 mx-auto bg-warning p-5 rounded-circle"><FaPhone className="h1 text-white text-center" /></div>
+                <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Meet & Agree</div>
 
              </div>
-             <div className="col-6 col-md-3 text-center">
-                <div className="col-12 col-md-6 mx-auto bg-warning p-5 rounded-circle"><FaHandshake className="h1 text-white text-center" /></div>
-                <div className="h2 text-white text-center" style={{fontFamily:"Lobster"}}>Deliver & Possesion</div>
+             <div className="col-12 col-md-3 text-center">
+                <div className="col-6 col-md-6 mx-auto bg-warning p-5 rounded-circle"><FaHandshake className="h1 text-white text-center" /></div>
+                <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Deliver & Possesion</div>
 
              </div>
            </div>
@@ -148,18 +147,19 @@ const IndexHome=(props)=>{
      const ourProjectsMarquee=()=>(
        <div className="" style={{backgroundImage:"url('/images/bg-3.jpg')",}} >
        <div style={{backgroundColor:theme,opacity:"0.9"}}>
-       <h2 className="text-warning text-center p-5" style={{fontFamily:"Lobster"}}>Our Projects</h2>
+       <h2 className="text-warning text-center p-5" style={{fontFamily:"'Aref Ruqaa', serif"}}>Our Properties</h2>
         <div className="col-12 col-md-9 mx-auto">
         <Marquee className="col-9 mx-auto" gradient={false} speed={50}>
           {projects.map((p,i)=>(
             <div className="p-4">
-              <img src={p.thumbnail} className="rounded border border-white" height="200px" width="200px"></img>
-              <p className="h4 text-white text-center" style={{fontFamily:"Lobster"}}>{p.name}</p>
+              <img src={p.thumbnail} className="rounded border border-white" height="300px" width="300px"></img>
+              <p className="h4 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>{p.name}</p>
+              <p className="h6 text-warning text-center"> Starting from {p.options[0].price} Cr</p>
             </div>
           ))}
         </Marquee>
         </div>
-        <div className="text-center p-5"><Link to="/projects"><button className="btn btn-warning">View All Projects</button></Link></div>
+        <div className="text-center p-5"><Link to="/projects"><button className="btn btn-warning">View All Properties</button></Link></div>
        </div>
        </div>
        
@@ -168,19 +168,19 @@ const IndexHome=(props)=>{
      const ourServices=()=>(
        <div style={{backgroundImage:"url('/images/bg-5.jpg')",}} >
          <div style={{backgroundColor:theme,opacity:"0.9"}}>
-           <div className="text-center h2 text-warning" style={{fontFamily:"Lobster"}}><h2>Our Services</h2></div>
+           <div className="text-center h2 text-warning" style={{fontFamily:"'Aref Ruqaa', serif"}}><h2>Our Services</h2></div>
            <div className="row p-4">
                <div className="col">
                  <div className="text-center "><img src="images/residential.jpg" className="border border-5 border-warning" width="200px" height="200px"></img></div>
-                 <div className="text-center h4 text-white p-2" style={{fontFamily:"Lobster"}}>Residential Property</div>
+                 <div className="text-center h4 text-white p-2" style={{fontFamily:"'Aref Ruqaa', serif"}}>Residential Property</div>
                </div>
                <div className="col">
                  <div className="text-center "><img src="images/commercial.jpg" className="border border-5 border-warning" width="200px" height="200px"></img></div>
-                 <div className="text-center h4 text-white p-2" style={{fontFamily:"Lobster"}}>Commercial Property</div>
+                 <div className="text-center h4 text-white p-2" style={{fontFamily:"'Aref Ruqaa', serif"}}>Commercial Property</div>
                </div>
                <div className="col">
                  <div className="text-center "><img src="images/land.jpg" className="border border-5 border-warning" width="200px" height="200px"></img></div>
-                 <div className="text-center h4 text-white p-2" style={{fontFamily:"Lobster"}}>Land & other Property</div>
+                 <div className="text-center h4 text-white p-2" style={{fontFamily:"'Aref Ruqaa', serif"}}>Land & other Property</div>
                </div>
            </div>
          </div>
@@ -190,7 +190,7 @@ const IndexHome=(props)=>{
      const testimonials=()=>(
        <div style={{backgroundImage:"url('/images/bg-4.jpg')"}}>
           <div style={{backgroundColor:theme,opacity:"0.8"}}>
-              <h2 className="text-center p-3 text-warning" style={{fontFamily:"Lobster"}}>What our Clients Say?</h2>
+              <h2 className="text-center p-3 text-warning" style={{fontFamily:"'Aref Ruqaa', serif"}}>What our Clients Say?</h2>
               <div className="row">
               <div className="col-12 col-md-6 my-auto ">
                <div className="col-9 mx-auto rounded p-2" >
@@ -252,8 +252,8 @@ const IndexHome=(props)=>{
      const footer=()=>(
        <div  style={{backgroundImage:"url('/images/bg-6.jpg')"}}>
          <div >
-           <div className="row p-2 ">
-            <div className="p-2  col-12 col-md-5">
+           <div className="row p-2 col-md-8 mx-auto ">
+            <div className="p-2  col-12 col-md-6">
             <div className="  rounded shadow-lg " style={{backgroundColor:theme,opacity:"0.9"}}>
                <div className="col-8 mx-auto" ><img src="/logo-2.png" width="100%" height="100px"></img></div>
                <div className="col-10 mx-auto text-center text-white p-4 h5" style={{fontFamily:"serif"}}>WHY WE ARE THE BEST!<br/>
@@ -263,38 +263,13 @@ Interior design is a process that provides its customers with a set of aesthetic
 
 
 
-             <div className="col-12 col-md-3  p-2" style={{backgroundColor:theme,opacity:"0.9",fontFamily:"Lobster"}}>
-               <p className="text-center text-warning h2 p-4">Offices</p>
-               <div className="p-2">
-               <div className="row p-2">
-                 <div className="col-2"><MdLocationOn className="text-warning h1" /></div>
-                 <div className="col-10"><p className=" text-white h4">Mumbai</p></div>
-
-               </div>
-               <div className="text-center" ><img src="/images/m.jpg" className="rounded" width="150px" height="120px"></img></div>
-               <div className="row p-2">
-                 <div className="col-2"><MdLocationOn className="text-warning h1" /></div>
-                 <div className="col-10"><p className=" text-white h4">Pune</p></div>
-
-               </div>
-               <div className="text-center" ><img src="/images/p.jpg" className="rounded" width="150px" height="120px"></img></div>
-
-               <div className="row p-2">
-                 <div className="col-2"><MdLocationOn className="text-warning h1" /></div>
-                 <div className="col-10"><p className=" text-white h4">Dubai</p></div>
-
-               </div>
-               <div className="text-center" ><img src="/images/d.jpg" className="rounded" width="150px" height="120px"></img></div>
-               </div>
-
-             </div>
+             
 
 
-
-             <div className="p-2 col-12 col-md-4">
-             <div className="" style={{backgroundColor:theme,opacity:"0.9",fontFamily:"Lobster"}}>
-               <p className="h3 text-center text-warning p-4" style={{fontFamily:"Lobster"}}>Contact Us</p>
-               <div className="p-5">
+             <div className="p-2 col-12 col-md-6">
+             <div className="rounded" style={{backgroundColor:theme,opacity:"0.9",fontFamily:"'Aref Ruqaa', serif"}}>
+               <p className="h3 text-center text-warning p-2" style={{fontFamily:"'Aref Ruqaa', serif"}}>Contact Us</p>
+               <div className="p-3">
                  <div className="row mb-3">
                    <div className="col-2"><MdOutlineCall className="h1 text-warning rounded-circle bg-white " /></div>
                    <div className="col-10">
@@ -325,22 +300,27 @@ Interior design is a process that provides its customers with a set of aesthetic
 
            </div>
          </div>
+         <div className="text-white text-center h3" style={{fontFamily:"'Aref Ruqaa', serif"}}>Mumbai | Pune | Dubai</div>
          <div style={{backgroundColor:theme}}><p className="text-center text-warning p-3 h6">Copyright © 2022 Requiza Realities</p></div>
        </div>
 
      )
     
     return (
-        <div>
-            <div>{topNav()}</div>         
+        <div className="g-0" style={{maxWidth:"100vw"}}>
+            <div><TopMenu /></div> 
+                 
+            <div className="container-fluid ">
             <div>{topCarousel()}</div>
             <div>{sec1()}</div>
-            <div>{process()}</div>
             <div>{ourProjectsMarquee()}</div>
+            <div>{process()}</div>
+           
             <div>{ourServices()}</div>
             <div>{testimonials()}</div>
             <br/><br/>
-            <div>{footer()}</div>
+            <div id="contact">{footer()}</div>
+            </div>
         </div>
     )
 }
