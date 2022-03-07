@@ -123,21 +123,21 @@ const IndexHome=(props)=>{
            <h1 className="text-center mt-5 p-5 text-white" style={{fontFamily:"'Aref Ruqaa', serif"}}>Our Process</h1>
            <div className="row p-5">
              <div className="col-12 col-md-3 text-center">
-                <div className="col-6 col-md-6 mx-auto bg-warning p-5 rounded-circle"><MdTravelExplore className="h1 text-white text-center" /></div>
+                <div className="col-8 col-md-6 mx-auto bg-warning p-4 rounded-circle"><MdTravelExplore className="h1 text-white text-center display-1" style={{fontSize:"6em"}} /></div>
                 <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Client Requirement & Budget</div>
              </div>
              <div className="col-12 col-md-3 text-center">
-                <div className="col-6 col-md-6 mx-auto bg-warning p-5 rounded-circle"><FaBuilding className="h1 text-white text-center" /></div>
+                <div className="col-8 col-md-6 mx-auto bg-warning p-4 rounded-circle"><FaBuilding className="h1 text-white text-center" style={{fontSize:"6em"}} /></div>
                 <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Project tour & Site visit</div>
 
              </div>
              <div className="col-12 col-md-3 text-center">
-                <div className="col-6 col-md-6 mx-auto bg-warning p-5 rounded-circle"><FaPhone className="h1 text-white text-center" /></div>
+                <div className="col-8 col-md-6 mx-auto bg-warning p-4 rounded-circle"><FaPhone className="h1 text-white text-center" style={{fontSize:"6em"}} /></div>
                 <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Meet & Agree</div>
 
              </div>
              <div className="col-12 col-md-3 text-center">
-                <div className="col-6 col-md-6 mx-auto bg-warning p-5 rounded-circle"><FaHandshake className="h1 text-white text-center" /></div>
+                <div className="col-8 col-md-6 mx-auto bg-warning p-4 rounded-circle"><FaHandshake className="h1 text-white text-center" style={{fontSize:"6em"}} /></div>
                 <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Deliver & Possesion</div>
 
              </div>
@@ -150,14 +150,16 @@ const IndexHome=(props)=>{
        <div className="" style={{backgroundImage:"url('/images/bg-3.jpg')",}} >
        <div style={{backgroundColor:theme,opacity:"0.9"}}>
        <h2 className="text-warning text-center p-5" style={{fontFamily:"'Aref Ruqaa', serif"}}>Our Properties</h2>
-        <div className="col-12 col-md-9 mx-auto">
+        <div className="col-12 col-md-9 mx-auto text-decoration-none">
         <Marquee className="col-9 mx-auto" gradient={false} speed={50}>
           {projects.map((p,i)=>(
-            <div className="p-4">
+            <Link to={`/projects/${p._id}`} className="text-decoration-none">
+            <div className="p-4 text-decoration-none" >
               <img src={p.thumbnail} className="rounded border border-white" height="300px" width="300px"></img>
-              <p className="h4 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>{p.name}</p>
-              <p className="h6 text-warning text-center"> Starting from {p.options[0].price} Cr</p>
+              <p className="h4 text-white text-center text-decoration-none" style={{fontFamily:"'Aref Ruqaa', serif"}}>{p.name}</p>
+              <p className="h6 text-warning text-center text-decoration-none"> Starting from {p.options[0].price} Cr</p>
             </div>
+            </Link>
           ))}
         </Marquee>
         </div>

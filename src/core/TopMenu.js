@@ -27,7 +27,7 @@ const TopMenu=()=>{
               <Navbar.Toggle aria-controls="navbarScroll" className="text-warning" />
               <Navbar.Collapse id="navbarScroll" className="">
       
-                <Form className="d-flex mx-auto col-6" >
+                <Form className="d-none d-md-flex mx-auto col-6" >
                   <FormControl
                     type="search"
                     placeholder="Search"
