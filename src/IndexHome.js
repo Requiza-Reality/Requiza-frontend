@@ -6,7 +6,7 @@ import {listProjects,getSearchProject} from "./core/apicalls"
 import { zoomIn} from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 import TopMenu from "./core/TopMenu"
-
+import Footer from "./core/footer"
 
 import {Navbar,Container,Form,Nav,NavDropdown,FormControl,Button} from "react-bootstrap"
 import Marquee from "react-fast-marquee";
@@ -121,23 +121,23 @@ const IndexHome=(props)=>{
        <div className="mt-5" style={{backgroundImage:"url('/images/bg-2.jpg')",height:"auto"}}>
          <div style={{backgroundColor:theme,opacity:"0.9",height:"auto"}}>
            <h1 className="text-center mt-5 p-5 text-white" style={{fontFamily:"'Aref Ruqaa', serif"}}>Our Process</h1>
-           <div className="row p-5">
-             <div className="col-12 col-md-3 text-center">
-                <div className="col-8 col-md-6 mx-auto bg-warning p-4 rounded-circle"><MdTravelExplore className="h1 text-white text-center display-1" style={{fontSize:"6em"}} /></div>
+           <div className="row p-5 " >
+             <div className="col-12 col-md-3 text-center p-2">
+                <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><MdTravelExplore className="h1 text-white text-center display-1 " style={{fontSize:"4em"}} /></div>
                 <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Client Requirement & Budget</div>
              </div>
-             <div className="col-12 col-md-3 text-center">
-                <div className="col-8 col-md-6 mx-auto bg-warning p-4 rounded-circle"><FaBuilding className="h1 text-white text-center" style={{fontSize:"6em"}} /></div>
+             <div className="col-12 col-md-3 text-center p-2">
+                <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><FaBuilding className="h1 text-white text-center" style={{fontSize:"4em"}} /></div>
                 <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Project tour & Site visit</div>
 
              </div>
-             <div className="col-12 col-md-3 text-center">
-                <div className="col-8 col-md-6 mx-auto bg-warning p-4 rounded-circle"><FaPhone className="h1 text-white text-center" style={{fontSize:"6em"}} /></div>
+             <div className="col-12 col-md-3 text-center p-2">
+                <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><FaPhone className="h1 text-white text-center" style={{fontSize:"4em"}} /></div>
                 <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Meet & Agree</div>
 
              </div>
-             <div className="col-12 col-md-3 text-center">
-                <div className="col-8 col-md-6 mx-auto bg-warning p-4 rounded-circle"><FaHandshake className="h1 text-white text-center" style={{fontSize:"6em"}} /></div>
+             <div className="col-12 col-md-3 text-center p-2">
+                <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><FaHandshake className="h1 text-white text-center" style={{fontSize:"4em"}} /></div>
                 <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Deliver & Possesion</div>
 
              </div>
@@ -323,7 +323,7 @@ Interior design is a process that provides its customers with a set of aesthetic
             <div>{ourServices()}</div>
             <div>{testimonials()}</div>
             <br/><br/>
-            <div id="contact">{footer()}</div>
+            <div id="contact"><Footer /></div>
             </div>
         </div>
     )

@@ -24,7 +24,7 @@ const TopMenu=()=>{
               <Navbar.Brand href="/" className="">
                 <img src="/logo-2.png" className="rounded" alt="" width="100%" height="60px" style={{borderRadius:"15px"}} />
               </Navbar.Brand>
-              <Navbar.Toggle aria-controls="navbarScroll" className="text-warning" />
+              <Navbar.Toggle aria-controls="navbarScroll" className="text-warning me-3 flex-wrap border-0" style={{fontSize:"0.8em"}} />
               <Navbar.Collapse id="navbarScroll" className="">
       
                 <Form className="d-none d-md-flex mx-auto col-6" >

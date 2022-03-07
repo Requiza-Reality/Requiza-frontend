@@ -7,6 +7,8 @@ import {Table,Toast,ToastContainer} from "react-bootstrap"
 import LeadForm from "./core/LeadForm"
 import {Carousel} from "react-responsive-carousel"
 import TopMenu from "./core/TopMenu";
+import Footer from "./core/footer"
+
 
 import {MdTravelExplore,MdLocationOn,MdOutlineCall,MdMarkEmailRead} from "react-icons/md"
 
@@ -264,7 +266,7 @@ Interior design is a process that provides its customers with a set of aesthetic
            <br/>
            <br/>
            <div className="fixed-bottom">{whatsappToast()}</div>
-           <div id="contact">{footer()}</div>
+           <div id="contact"><Footer /></div>
         </div>
 
        

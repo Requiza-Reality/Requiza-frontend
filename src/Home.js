@@ -10,6 +10,8 @@ import LeadForm from "./core/LeadForm"
 import {BsSearch} from "react-icons/bs"
 import {MdTravelExplore,MdLocationOn,MdOutlineCall,MdMarkEmailRead} from "react-icons/md"
 import TopMenu from "./core/TopMenu"
+import Footer from "./core/footer"
+
 const ani=merge(zoomInRight,flipOutX)
 
 
@@ -206,7 +208,7 @@ Interior design is a process that provides its customers with a set of aesthetic
           </div>
             </div>
             <br/>
-          <div id="contact" className="g-0">{footer()}</div>
+          <div id="contact" className="g-0"><Footer /></div>
         </div>
           )}
         </div>

@@ -4,6 +4,7 @@ import {listProjects,getSearchProject} from "./core/apicalls"
 import TopMenu from "./core/TopMenu"
 import ProjectCard from "./core/ProjectCard"
 import {MdTravelExplore,MdLocationOn,MdOutlineCall,MdMarkEmailRead} from "react-icons/md"
+import Footer from "./core/footer"
 
 
 const SearchResult=()=>{
@@ -99,7 +100,7 @@ const SearchResult=()=>{
            ))}
           </div>
             </div>
-            <div id="contact">{footer()}</div>
+            <div id="contact"><Footer /></div>
         </div>
     )
 }

@@ -2,6 +2,8 @@ import React from "react"
 import {Navbar,Container,Form,Nav,NavDropdown,FormControl,Button} from "react-bootstrap"
 import {MdTravelExplore,MdLocationOn,MdOutlineCall,MdMarkEmailRead} from "react-icons/md"
 import TopMenu from "./core/TopMenu"
+import Footer from "./core/footer"
+
 
 const AboutUs=()=>{
 
@@ -119,7 +121,7 @@ Her combined energy and perseverance has taken the company where it is nowadays 
                <div className="col-5"></div>
                <div className="col-7 overflow-auto" style={{height:"80vh"}}>{text()}</div>
            </div>
-           <div id="contact" className="g-0">{footer()}</div>
+           <div id="contact" className="g-0"><Footer /></div>
         </div>
     )
 }
