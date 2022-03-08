@@ -22,7 +22,7 @@ const TopMenu=()=>{
           <Navbar bg="" expand="lg" variant="dark" fixed="top" style={{backgroundColor:theme,opacity:"0.9"}} className="shadow-lg p-0">
             <Container fluid>
               <Navbar.Brand href="/" className="">
-                <img src="/logo-2.png" className="rounded" alt="" width="100%" height="60px" style={{borderRadius:"15px"}} />
+                <img src="/logo-2.png" className="rounded" alt="" width="200px" height="60px" style={{borderRadius:"15px"}} />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" className="text-warning me-3 flex-wrap border-0" style={{fontSize:"0.8em"}} />
               <Navbar.Collapse id="navbarScroll" className="">
