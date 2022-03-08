@@ -91,6 +91,7 @@ const IndexHome=(props)=>{
                     
                 </div>
                 
+               
             </Carousel>
         </div>
       )
@@ -103,8 +104,7 @@ const IndexHome=(props)=>{
               
                <h1 className="text-white text-center mt-5" style={{fontFamily:"'Aref Ruqaa', serif"}}>Requiza Reality</h1>
                <p className="text-white">
-               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-               </p>
+               Buying a home is one of the most crucial decisions and the most significant financial outlay in anybody's life. The REQUIZA REALITY makes your home journey simple by providing relevant information that helps you make an informed decision. From real estate news to the legalities of home buying to taxation and tips on home designing and improvement, this is your go-to source for everything real estate.               </p>
                <Link to="/projects" ><button className="btn btn-lg btn-warning ">View All Projects</button></Link>
              </div>
              <div className="col-10 col-md-4 mx-auto">
@@ -123,21 +123,21 @@ const IndexHome=(props)=>{
            <h1 className="text-center mt-5 p-5 text-white" style={{fontFamily:"'Aref Ruqaa', serif"}}>Our Process</h1>
            <div className="row p-5 " >
              <div className="col-12 col-md-3 text-center p-2">
-                <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><MdTravelExplore className="h1 text-white text-center display-1 " style={{fontSize:"4em"}} /></div>
+                <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><MdTravelExplore className="h1 text-muted  text-center display-1 " style={{fontSize:"5em"}} /></div>
                 <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Client Requirement & Budget</div>
              </div>
              <div className="col-12 col-md-3 text-center p-2">
-                <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><FaBuilding className="h1 text-white text-center" style={{fontSize:"4em"}} /></div>
+                <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><FaBuilding className="h1 text-muted text-center" style={{fontSize:"5em"}} /></div>
                 <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Project tour & Site visit</div>
 
              </div>
              <div className="col-12 col-md-3 text-center p-2">
-                <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><FaPhone className="h1 text-white text-center" style={{fontSize:"4em"}} /></div>
+                <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><FaPhone className="h1 text-muted text-center" style={{fontSize:"5em"}} /></div>
                 <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Meet & Agree</div>
 
              </div>
              <div className="col-12 col-md-3 text-center p-2">
-                <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><FaHandshake className="h1 text-white text-center" style={{fontSize:"4em"}} /></div>
+                <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><FaHandshake className="h1 text-muted text-center" style={{fontSize:"5em"}} /></div>
                 <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Deliver & Possesion</div>
 
              </div>

@@ -14,7 +14,7 @@ const Footer=()=>{
            <div className="  rounded shadow-lg " style={{backgroundColor:theme,opacity:"0.9"}}>
               <div className="col-8 mx-auto" ><img src="/logo-2.png" width="100%" height="100px"></img></div>
               <div className="col-10 mx-auto text-center text-white p-4 h5" style={{fontFamily:"serif"}}>WHY WE ARE THE BEST!<br/>
-Interior design is a process that provides its customers with a set of aesthetically pleasing but efficient solutions for a better use of the space in question. The goal of interior design is to improve the user experience by better managing the space available in the intervened environment.</div>
+              Requiza Reality provides credibility, strength, and benefit to ensure our client succeeds. We bring together the buyers and the sellers and manage and solve many challenging and complex transactions to gladden everyone involved, especially our clients. Our knowledge and expertise will help you achieve your real estate goals expeditiously.</div>
             </div>
            </div>
 
@@ -71,7 +71,8 @@ Interior design is a process that provides its customers with a set of aesthetic
            <div className="  rounded shadow-lg " style={{backgroundColor:theme,opacity:"0.9"}}>
               <div className="col-8 mx-auto" ><img src="/logo-2.png" width="100%" height="100px"></img></div>
               <div className="col-10 mx-auto text-center text-white p-4 h5" style={{fontFamily:"serif"}}>WHY WE ARE THE BEST!<br/>
-Interior design is a process that provides its customers with a set of aesthetically pleasing but efficient solutions for a better use of the space in question. The goal of interior design is to improve the user experience by better managing the space available in the intervened environment.</div>
+              Requiza Reality provides credibility, strength, and benefit to ensure our client succeeds. We bring together the buyers and the sellers and manage and solve many challenging and complex transactions to gladden everyone involved, especially our clients. Our knowledge and expertise will help you achieve your real estate goals expeditiously.
+              </div>
             </div>
            </div>
 

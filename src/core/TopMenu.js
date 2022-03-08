@@ -33,7 +33,7 @@ const TopMenu=()=>{
                     placeholder="Search"
                     value={search}
                     onChange={handleSearchChange}
-                    className="me-2 mx-auto d-flex col-6"
+                    className="me-2 mx-auto d-flex col-6 border border-2 border-warning"
                     aria-label="Search"
                   />
                   <Link to={`/projects/search/${search}`}><Button variant="outline-warning" ><BsSearch /></Button></Link>
@@ -62,7 +62,7 @@ const TopMenu=()=>{
                       placeholder="Search"
                       value={search}
                       onChange={handleSearchChange}
-                      className="me-2 mx-auto d-flex"
+                      className="me-2 mx-auto d-flex border border-2 border-warning"
                       aria-label="Search"
                     />
                    <Link to={`/projects/search/${search}`}> <Button variant="outline-warning" ><BsSearch /></Button></Link>
