@@ -36,7 +36,7 @@ const TopMenu=()=>{
                     className="me-2 mx-auto d-flex col-6 border border-2 border-warning"
                     aria-label="Search"
                   />
-                  <Link to={`/projects/search/${search}`}><Button variant="outline-warning" ><BsSearch /></Button></Link>
+                  <Link to={`/projects/search/${search}`}><Button variant="outline-warning" type="submit" ><BsSearch /></Button></Link>
                 </Form>
                 <Nav
                   className="me-2 mx-auto my-2 my-lg-0 d-flex"

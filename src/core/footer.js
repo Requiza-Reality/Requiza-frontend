@@ -13,7 +13,7 @@ const Footer=()=>{
            <div className="p-2  col-12 col-md-6">
            <div className="  rounded shadow-lg " style={{backgroundColor:theme,opacity:"0.9"}}>
               <div className="col-8 mx-auto" ><img src="/logo-2.png" width="100%" height="100px"></img></div>
-              <div className="col-10 mx-auto text-center text-white p-4 h5" style={{fontFamily:"serif"}}>WHY WE ARE THE BEST!<br/>
+              <div className="col-10 mx-auto text-center text-white p-1 h5" style={{fontFamily:"serif"}}><p className="p-2 h5">WHY WE ARE THE BEST! </p>
               Requiza Reality provides credibility, strength, and benefit to ensure our client succeeds. We bring together the buyers and the sellers and manage and solve many challenging and complex transactions to gladden everyone involved, especially our clients. Our knowledge and expertise will help you achieve your real estate goals expeditiously.</div>
             </div>
            </div>
@@ -57,7 +57,7 @@ const Footer=()=>{
 
           </div>
         </div>
-        <div className="text-white text-center h3" style={{fontFamily:"'Aref Ruqaa', serif"}}>Mumbai | Pune | Dubai</div>
+        <div className="text-white text-center h3" style={{fontFamily:"'Aref Ruqaa', serif"}}>Mumbai&nbsp;&nbsp;|&nbsp;&nbsp;Pune&nbsp;&nbsp;|&nbsp;&nbsp;Dubai</div>
         <div style={{backgroundColor:theme}}><p className="text-center text-warning p-3 h6">Copyright © 2022 Requiza Reality</p></div>
       </div>
 
@@ -70,7 +70,7 @@ const Footer=()=>{
 
            <div className="  rounded shadow-lg " style={{backgroundColor:theme,opacity:"0.9"}}>
               <div className="col-8 mx-auto" ><img src="/logo-2.png" width="100%" height="100px"></img></div>
-              <div className="col-10 mx-auto text-center text-white p-4 h5" style={{fontFamily:"serif"}}>WHY WE ARE THE BEST!<br/>
+              <div className="col-10 mx-auto text-center text-white p-4 h5" style={{fontFamily:"serif"}}><p className="h5 p-2">WHY WE ARE THE BEST!</p>
               Requiza Reality provides credibility, strength, and benefit to ensure our client succeeds. We bring together the buyers and the sellers and manage and solve many challenging and complex transactions to gladden everyone involved, especially our clients. Our knowledge and expertise will help you achieve your real estate goals expeditiously.
               </div>
             </div>
@@ -112,7 +112,7 @@ const Footer=()=>{
 
 
             </div>
-            <div className="text-white text-center h3" style={{fontFamily:"'Aref Ruqaa', serif"}}>Mumbai | Pune | Dubai</div>
+            <div className="text-white text-center h3" style={{fontFamily:"'Aref Ruqaa', serif"}}>Mumbai&nbsp;&nbsp;|&nbsp;&nbsp;Pune&nbsp;&nbsp;|&nbsp;&nbsp;Dubai</div>
         <div style={{backgroundColor:theme}}><p className="text-center text-warning p-3 h6">Copyright © 2022 Requiza Reality</p></div>
         </div>
     )

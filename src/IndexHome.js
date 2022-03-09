@@ -124,11 +124,11 @@ const IndexHome=(props)=>{
            <div className="row p-5 " >
              <div className="col-12 col-md-3 text-center p-2">
                 <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><MdTravelExplore className="h1 text-muted  text-center display-1 " style={{fontSize:"5em"}} /></div>
-                <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Client Requirement & Budget</div>
+                <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Requirement & Budget</div>
              </div>
              <div className="col-12 col-md-3 text-center p-2">
                 <div className=" mx-auto bg-warning  rounded-circle row align-items-center" style={{height:"150px",width:"150px"}}><FaBuilding className="h1 text-muted text-center" style={{fontSize:"5em"}} /></div>
-                <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Project tour & Site visit</div>
+                <div className="h2 text-white text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Project Site visit</div>
 
              </div>
              <div className="col-12 col-md-3 text-center p-2">
