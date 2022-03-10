@@ -45,7 +45,7 @@ const TopMenu=()=>{
                   navbarScroll
                 >
                   <Nav.Link href="/" className="text-warning">Home</Nav.Link> 
-                  <Nav.Link href="/projects" className="text-warning">Projects</Nav.Link>             
+                  <Nav.Link href="/projects" className="text-warning">Our Properties</Nav.Link>             
                   <Nav.Link href="/aboutus" className="text-warning">About Us</Nav.Link>
                   <Nav.Link href="#contact" className="text-warning">Contact Us</Nav.Link>
     

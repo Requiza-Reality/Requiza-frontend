@@ -201,9 +201,9 @@ Interior design is a process that provides its customers with a set of aesthetic
            {showLeadForm?(<LeadForm/>):null}
           
             <div style={{backgroundImage:"url('/images/bg-5.jpg')"}}>
-            <div className="row justify-content-center col-12 m-0 p-4" style={{backgroundColor:theme,opacity:"0.9",minHeight:"500px"}}>
+            <div className="row justify-content-center col-12 m-0 p-4" style={{backgroundColor:theme,opacity:"0.96",minHeight:"500px"}}>
           {project.map((p,i)=>(
-            <div className=" col-11 col-md-6 col-lg-4 p-3"> <Link to={`/projects/${p._id}`} style={{textDecoration:"none"}}><ProjectCard project={p} className="" style={{textDecoration:"none"}}></ProjectCard></Link></div>
+            <div className=" col-11 col-md-6 col-lg-4 p-3"> <Link to={`/projects/${p._id}`} style={{textDecoration:"none"}}><ProjectCard project={p} className="" style={{textDecoration:"none",opacity:"1"}}></ProjectCard></Link></div>
            ))}
           </div>
             </div>

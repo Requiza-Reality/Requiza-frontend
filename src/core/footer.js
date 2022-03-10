@@ -31,7 +31,7 @@ const Footer=()=>{
                   <div className="col-2"><MdOutlineCall className="h1 text-warning rounded-circle bg-white " /></div>
                   <div className="col-10">
                     <p className="text-white h5">Call Us</p>
-                    <p className="text-warning h5">+919694318893</p>
+                    <p className="text-warning h5">+919860596900</p>
                   </div>
                 </div>
 
@@ -85,7 +85,7 @@ const Footer=()=>{
                   <div className=" text-center"><MdOutlineCall className="h1 text-warning text-center rounded-circle bg-white " /></div>
                   <div className="p-3">
                     <p className="text-white h5">Call Us</p>
-                    <p className="text-warning h5">+919694318893</p>
+                    <p className="text-warning h5">+919860596900</p>
                   </div>
                 </div>
 

@@ -125,7 +125,12 @@ Her combined energy and perseverance has taken the company where it is nowadays 
                <br/><br/>
                <div className="col-12 col-md-7 mt-5 mt-md-0 overflow-auto " >
                <h3 className="text-center text-warning mb-3 " style={{fontFamily:"'Aref Ruqaa', serif"}}>Get To Know Our Director</h3>
-               <div className="my-auto">{text()}</div>
+               <div className="my-auto col-12  col-xl-9 mx-auto">{text()}</div>
+               <div className="mt-5 mx-auto d-flex justify-content-center">
+                 <iframe
+                  className="border border-5 border-warning "
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.5622221657577!2d73.00419986540547!3d19.08297605671098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c13a61d8a4f9%3A0x4835fbf744b50938!2sSatra%20Plaza%2C%20Phase%202%2C%20Sector%2019D%2C%20Vashi%2C%20Navi%20Mumbai%2C%20Maharashtra%20400703!5e0!3m2!1sen!2sin!4v1646935416929!5m2!1sen!2sin" width="600" height="300"></iframe>
+               </div>
                </div>
            </div>
            <div id="contact" className="g-0"><Footer /></div>

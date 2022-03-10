@@ -144,7 +144,7 @@ const Project=(props)=>{
 
     const whatsappToast=()=>(
       <span className="d-flex justify-content-end p-3 ">
-       <div className="col-3 col-md-1 p-4  rounded-circle text-center" style={{backgroundColor:theme,opacity:"0.9"}}>      <a target="_blank" href="https://wa.me/+919694318893"><div className=""><BsWhatsapp className="h1 text-warning text-center " /></div></a></div>
+       <div className="col-3 col-md-1 p-4  rounded-circle text-center" style={{backgroundColor:theme,opacity:"0.9"}}>      <a target="_blank" href="https://wa.me/+919860596900"><div className=""><BsWhatsapp className="h1 text-warning text-center " /></div></a></div>
       </span>
     )
     {/*
