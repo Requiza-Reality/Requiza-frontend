@@ -8,7 +8,7 @@ const ProjectCard=({project})=>{
         <div className="card  shadow-lg rounded border" style={{minHeight:"500px",textDecoration:"none",fontFamily:"'Aref Ruqaa', serif"}}>
           <div className="card-header h5 text-center text-warning" style={{backgroundColor:theme,color:"#dca43f",opacity:"0.8"}} >{project.name}</div>
            <div className="p-3">
-               <img src={project.thumbnail} width="100%" height="" style={{maxHeight:"300px"}}></img>
+               <img src={project.thumbnail} width="100%" height="" style={{maxHeight:"200px"}}></img>
            </div>
            <div className="card-body text-wrap" style={{fontFamily:"serif"}}>
                <div className=" text-muted">{project.location}</div>

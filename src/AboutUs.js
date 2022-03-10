@@ -39,7 +39,8 @@ const AboutUs=()=>{
 
       const text=()=>(
           <div className="" style={{fontFamily:"serif"}}>
-              <p className="h5 text-muted">Menka Rajpoot is an Architect . She established the company in 2009 with the vision to expand the business .Youngblood with passionate dreams. She is also stepping towards the digital markets to establish greater heights and bring wonders to the existing empire.</p>
+              <h3 className="text-center text-dark mb-3 " style={{fontFamily:"'Aref Ruqaa', serif"}}>From The Director's Desk</h3>
+              <p className="h5 text-muted" >Menka Rajpoot is an Architect . She established the company in 2009 with the vision to expand the business .Youngblood with passionate dreams. She is also stepping towards the digital markets to establish greater heights and bring wonders to the existing empire.</p>
                <br/>
               <p className="h5 text-muted">Mrs Menka Rajpoot belong to business community from North India. She began her career with humble roots and worked her way up with her hard work, Genuineness and Dedication. She worked with various companies in Production and Sales. She started her Real Estate Consultant career as an CP .
 Eventually she founded her own company in the year 2009 and now serving her clients and investors with great zeal and enthusiasm. She cherishes assembly unused individuals, building relations, managing with complicated issues and overseeing group. She deals not only in Residential, commercial sector but also in land, warehousing, Bungalow, Plots  etc. All over Mumbai & Pune and helps investors to choose the right path for future investment.
@@ -112,14 +113,17 @@ Her combined energy and perseverance has taken the company where it is nowadays 
     return(
         <div className="container" style={{maxWidth:"100vw"}}>
            <div><TopMenu /></div>
-           <br/>
-           <br/>
-           <br/>
-           <br/>
-           <br/>
+
+          
            <div className="row">
-               <div className="col-5"></div>
-               <div className="col-7 overflow-auto" style={{height:"80vh"}}>{text()}</div>
+               <div className="col-12 col-md-5 my-auto">
+               
+               <img src="images/about-img.jpeg" className="rounded border border-3 border-warning" width="100%" height="100%">
+               </img>
+               <p className="h4 text-center text-dark mb-0" style={{fontFamily:"'Aref Ruqaa', serif"}}>Mrs Menka Rajpoot</p>
+               <p className="h6 text-center text-muted mt-0" style={{fontFamily:"'Aref Ruqaa', serif"}}>Director , Requiza Reality</p>
+               </div>
+               <div className="col-12 col-md-7 overflow-auto my-auto" >{text()}</div>
            </div>
            <div id="contact" className="g-0"><Footer /></div>
         </div>

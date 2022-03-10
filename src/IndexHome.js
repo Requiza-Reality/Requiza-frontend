@@ -199,7 +199,19 @@ const IndexHome=(props)=>{
               <div className="col-12 col-md-6 my-auto ">
                <div className="col-9 mx-auto rounded p-2" >
                <div className="card p-3 shadow-lg" style={{backgroundColor:"#000000",opacity:"1"}}>
-                  <p className="text-white ">"From the very start moment that we talked with the team, the staff were young , cool and innovative. Although we were unsure of the exact direction to go, they listened to us and guided all the way through it was done. What a wonderful experience.."</p>
+                  <p className="text-center h6 text-warning" style={{fontFamily:"'Aref Ruqaa', serif"}}>Good Selection of Properties</p>
+                  <p className="text-white ">"Requiza Reality® are a very professional real estate agency in whole Mumbai with good selection of places. More importantly, they spend time with the client to show variety of options. We ended up taking another place – yet, if ever a need arises, we trust to contact Menka again!"</p>
+                  <p className="text-white h6">– Pratik Bhide </p>
+                 
+                </div>
+                
+               </div>
+
+               <div className="col-9 mx-auto rounded p-2" >
+               <div className="card p-3 shadow-lg" style={{backgroundColor:"#000000",opacity:"1"}}>
+               <p className="text-center h6 text-warning" style={{fontFamily:"'Aref Ruqaa', serif"}}>I didn’t expect such a friendly Agent!</p>
+
+                  <p className="text-white ">"Menka and her team were the first real estate agents I met when I arrived from Vietnam in Mumbai, India. She arranged all the visits in a day, she showed really good options. She does really understand our needs. She picked me up at my hotel with her car and spent the whole day with me. She even paid for the snacks and drinks. I didn’t expect such a friendly agent. I feel like a queen with her and I didn’t feel the time go by because we were talking all the time. I really recommend her and her team for their professionalism and sympathy."</p>
                   <p className="text-white h6">-Anil Sharma</p>
                  
                 </div>
@@ -208,17 +220,10 @@ const IndexHome=(props)=>{
 
                <div className="col-9 mx-auto rounded p-2" >
                <div className="card p-3 shadow-lg" style={{backgroundColor:"#000000",opacity:"1"}}>
-                  <p className="text-white ">"From the very start moment that we talked with the team, the staff were young , cool and innovative. Although we were unsure of the exact direction to go, they listened to us and guided all the way through it was done. What a wonderful experience.."</p>
-                  <p className="text-white h6">-Anil Sharma</p>
-                 
-                </div>
-                
-               </div>
+               <p className="text-center h6 text-warning" style={{fontFamily:"'Aref Ruqaa', serif"}}>Authentic, Clear and Professional</p>
 
-               <div className="col-9 mx-auto rounded p-2" >
-               <div className="card p-3 shadow-lg" style={{backgroundColor:"#000000",opacity:"1"}}>
-                  <p className="text-white ">"From the very start moment that we talked with the team, the staff were young , cool and innovative. Although we were unsure of the exact direction to go, they listened to us and guided all the way through it was done. What a wonderful experience.."</p>
-                  <p className="text-white h6">-Anil Sharma</p>
+                  <p className="text-white ">"Requiza Reality…true to their name reflect their commitment to the vision of their client. They are authentic genuine and honest in their dealing….their clarity ensures that you do not end up wasting your time on futile trips in your property search….last but not the least, they are professional and Heartful in good measure. My Good wishes to them."</p>
+                  <p className="text-white h6">-Nita Anant</p>
                  
                 </div>
                 
@@ -229,8 +234,10 @@ const IndexHome=(props)=>{
               
               <div className="col-9 mx-auto rounded p-2" >
                <div className="card p-3 shadow-lg" style={{backgroundColor:"#000000",opacity:"1"}}>
-                  <p className="text-white ">"From the very start moment that we talked with the team, the staff were young , cool and innovative. Although we were unsure of the exact direction to go, they listened to us and guided all the way through it was done. What a wonderful experience.."</p>
-                  <p className="text-white h6">-Anil Sharma</p>
+               <p className="text-center h6 text-warning" style={{fontFamily:"'Aref Ruqaa', serif"}}>Helped us locate the right luxury apartment in Mumbai</p>
+
+                  <p className="text-white ">"Requiza Reality understood our requirements and helped us locate the right luxury apartment in Mumbai. They provided us excellent service, and continue to help us with property consulting in Mumbai on an ongoing basis. Appreciate all their hard work and happy to be associated with them."</p>
+                  <p className="text-white h6">-Vasanthi Balasubramanian</p>
                  
                 </div>
                 
@@ -238,8 +245,10 @@ const IndexHome=(props)=>{
 
                <div className="col-9 mx-auto rounded p-2" >
                <div className="card p-3 shadow-lg" style={{backgroundColor:"#000000",opacity:"1"}}>
-                  <p className="text-white ">"From the very start moment that we talked with the team, the staff were young , cool and innovative. Although we were unsure of the exact direction to go, they listened to us and guided all the way through it was done. What a wonderful experience.."</p>
-                  <p className="text-white h6">-Anil Sharma</p>
+               <p className="text-center h6 text-warning" style={{fontFamily:"'Aref Ruqaa', serif"}}>They served as our eyes and ears, with us in California, USA</p>
+
+                  <p className="text-white ">"Menka and Raj are an excellent resource for narrowing down the numerous choices in real estate purchase in Mumbai. We were looking for a plot to invest and being California residents could not really narrow down our options without actually looking at the sites. Menka and Raj served as our eyes and ears and helped us in selection and we made sure that when we visited Mumbai, we only had to complete the paperwork and formalities. They are very helpful and do a good job of understanding your unique and specific needs – all of this via phone and email. We are very pleased with their service levels and we wish them all the best for their future endeavours. We definitely recommend their services, especially for NRIs."</p>
+                  <p className="text-white h6">-Archana and Natraj Iyer, Bay Area, California</p>
                  
                 </div>
                 

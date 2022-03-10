@@ -27,16 +27,17 @@ const TopMenu=()=>{
               <Navbar.Toggle aria-controls="navbarScroll" className="text-warning me-3 flex-wrap border-0" style={{fontSize:"0.8em"}} />
               <Navbar.Collapse id="navbarScroll" className="">
       
-                <Form className="d-none d-md-flex mx-auto col-6" >
-                  <FormControl
+                <Form className="d-none d-md-flex mx-auto col-6" action={`/projects/search/${search}`} >
+                  <input
                     type="search"
                     placeholder="Search"
                     value={search}
                     onChange={handleSearchChange}
-                    className="me-2 mx-auto d-flex col-6 border border-2 border-warning"
+                    className="form-control me-2 mx-auto d-flex col-6 border border-2 border-warning"
                     aria-label="Search"
+                    required
                   />
-                  <Link to={`/projects/search/${search}`}><Button variant="outline-warning" type="submit" ><BsSearch /></Button></Link>
+                  <Button variant="outline-warning" type="submit" ><BsSearch /></Button>
                 </Form>
                 <Nav
                   className="me-2 mx-auto my-2 my-lg-0 d-flex"
@@ -56,7 +57,7 @@ const TopMenu=()=>{
       )
       const mobSearch=()=>(
         <div className="d-block d-md-none col-9 mx-auto m-0" >
-            <Form className="d-flex mx-auto p-2">
+            <Form className="d-flex mx-auto p-2" action={`/projects/search/${search}`}>
                     <FormControl
                       type="search"
                       placeholder="Search"
@@ -64,8 +65,9 @@ const TopMenu=()=>{
                       onChange={handleSearchChange}
                       className="me-2 mx-auto d-flex border border-2 border-warning"
                       aria-label="Search"
+                      required
                     />
-                   <Link to={`/projects/search/${search}`}> <Button variant="outline-warning" ><BsSearch /></Button></Link>
+                   <Button variant="outline-warning" type="submit"><BsSearch /></Button>
             </Form>
         </div>
         )
