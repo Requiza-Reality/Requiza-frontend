@@ -39,16 +39,15 @@ const AboutUs=()=>{
 
       const text=()=>(
           <div className="" style={{fontFamily:"serif"}}>
-              <h3 className="text-center text-dark mb-3 " style={{fontFamily:"'Aref Ruqaa', serif"}}>From The Director's Desk</h3>
-              <p className="h5 text-muted" >Menka Rajpoot is an Architect . She established the company in 2009 with the vision to expand the business .Youngblood with passionate dreams. She is also stepping towards the digital markets to establish greater heights and bring wonders to the existing empire.</p>
+              <p className="h5 text-white" >Menka Rajpoot is an Architect . She established the company in 2009 with the vision to expand the business .Youngblood with passionate dreams. She is also stepping towards the digital markets to establish greater heights and bring wonders to the existing empire.</p>
                <br/>
-              <p className="h5 text-muted">Mrs Menka Rajpoot belong to business community from North India. She began her career with humble roots and worked her way up with her hard work, Genuineness and Dedication. She worked with various companies in Production and Sales. She started her Real Estate Consultant career as an CP .
+              <p className="h5 text-white">Mrs Menka Rajpoot belong to business community from North India. She began her career with humble roots and worked her way up with her hard work, Genuineness and Dedication. She worked with various companies in Production and Sales. She started her Real Estate Consultant career as an CP .
 Eventually she founded her own company in the year 2009 and now serving her clients and investors with great zeal and enthusiasm. She cherishes assembly unused individuals, building relations, managing with complicated issues and overseeing group. She deals not only in Residential, commercial sector but also in land, warehousing, Bungalow, Plots  etc. All over Mumbai & Pune and helps investors to choose the right path for future investment.
 Her combined energy and perseverance has taken the company where it is nowadays as an organization.</p>
               <br/>
-              <p className="h5 text-muted">With her excellent marketing skills and wise hospitality, she has been able to pull up a good business. Along with the knowledge of Architecture , interior designing and early exposure to the Real Estate sector she had developed good decisions architectural making skills. Apart from this Mrs Menka Rajpoot has an impressive personality and a calculative mind which is much need in Real Estate business.</p>
+              <p className="h5 text-white">With her excellent marketing skills and wise hospitality, she has been able to pull up a good business. Along with the knowledge of Architecture , interior designing and early exposure to the Real Estate sector she had developed good decisions architectural making skills. Apart from this Mrs Menka Rajpoot has an impressive personality and a calculative mind which is much need in Real Estate business.</p>
                <br/>
-              <p className="h5 text-muted">With her youthful energy and amazing business mind, Mrs. Menka Rajpoot will make the future years count for REQUIZA REALITY.</p>
+              <p className="h5 text-white">With her youthful energy and amazing business mind, Mrs. Menka Rajpoot will make the future years count for REQUIZA REALITY.</p>
           </div>
       )
 
@@ -111,7 +110,7 @@ Her combined energy and perseverance has taken the company where it is nowadays 
      
 
     return(
-        <div className="container" style={{maxWidth:"100vw"}}>
+        <div className="container" style={{maxWidth:"100vw",backgroundColor:theme}}>
            <div><TopMenu /></div>
 
           
@@ -120,10 +119,14 @@ Her combined energy and perseverance has taken the company where it is nowadays 
                
                <img src="images/about-img.jpeg" className="rounded border border-3 border-warning" width="100%" height="100%">
                </img>
-               <p className="h4 text-center text-dark mb-0" style={{fontFamily:"'Aref Ruqaa', serif"}}>Mrs Menka Rajpoot</p>
-               <p className="h6 text-center text-muted mt-0" style={{fontFamily:"'Aref Ruqaa', serif"}}>Director , Requiza Reality</p>
+               <p className="h4 text-center text-warning mb-0" style={{fontFamily:"'Aref Ruqaa', serif"}}>Mrs Menka Rajpoot</p>
+               <p className="h6 text-center text-white mt-0" style={{fontFamily:"'Aref Ruqaa', serif"}}>Director , Requiza Reality</p>
                </div>
-               <div className="col-12 col-md-7 overflow-auto my-auto" >{text()}</div>
+               <br/><br/>
+               <div className="col-12 col-md-7 mt-5 mt-md-0 overflow-auto " >
+               <h3 className="text-center text-warning mb-3 " style={{fontFamily:"'Aref Ruqaa', serif"}}>Get To Know Our Director</h3>
+               <div className="my-auto">{text()}</div>
+               </div>
            </div>
            <div id="contact" className="g-0"><Footer /></div>
         </div>
