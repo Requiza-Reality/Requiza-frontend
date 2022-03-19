@@ -15,9 +15,6 @@ import Footer from "./core/footer"
 const ani=merge(zoomInRight,flipOutX)
 
 
-
-
-
 const Home=(props)=>{
 
   const [project,setProjects]=useState([])

@@ -25,7 +25,7 @@ const TopMenu=()=>{
                 <img src="/logo-2.png" className="rounded" alt="" width="200px" height="60px" style={{borderRadius:"15px"}} />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" className="text-warning me-3 flex-wrap border-0" style={{fontSize:"0.8em"}} />
-              <Navbar.Collapse id="navbarScroll" className="">
+              <Navbar.Collapse id="navbarScroll" className="" >
       
                 <Form className="d-none d-md-flex mx-auto col-6" action={`/projects/search/${search}`} >
                   <input
@@ -41,13 +41,13 @@ const TopMenu=()=>{
                 </Form>
                 <Nav
                   className="me-2 mx-auto my-2 my-lg-0 d-flex"
-                  style={{ maxHeight: '100px'}}
+                  
                   navbarScroll
                 >
-                  <Nav.Link href="/" className="text-warning">Home</Nav.Link> 
-                  <Nav.Link href="/projects" className="text-warning">Our Properties</Nav.Link>             
-                  <Nav.Link href="/aboutus" className="text-warning">About Us</Nav.Link>
-                  <Nav.Link href="#contact" className="text-warning">Contact Us</Nav.Link>
+                  <Nav.Link href="/" className="text-warning border-bottom border-white p-2 border-md-0">Home</Nav.Link> 
+                  <Nav.Link href="/projects" className="text-warning border-bottom border-white p-2">Our Properties</Nav.Link>             
+                  <Nav.Link href="/aboutus" className="text-warning border-bottom border-white p-2">About Us</Nav.Link>
+                  <Nav.Link href="/contactus" className="text-warning border-bottom border-white p-2">Contact Us</Nav.Link>
     
                 </Nav>
               </Navbar.Collapse>

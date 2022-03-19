@@ -8,6 +8,7 @@ import Project from "./Project"
 import AboutUs from "./AboutUs"
 import IndexHome from "./IndexHome"
 import SearchResult from "./SearchResult"
+import Contact from "./Contact"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
      <Route  path="/projects/:projectId" element={<Project/>}></Route>
      <Route  path="/aboutus" element={<AboutUs/>}></Route>
      <Route  path="/projects/search/:searchkey" element={<SearchResult/>}></Route>
+     <Route  path="/contactus" element={<Contact/>}></Route>
 
 
    </Routes>

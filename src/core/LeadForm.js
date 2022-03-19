@@ -1,6 +1,8 @@
 import React,{useState} from "react"
 import {Modal,Button} from "react-bootstrap"
 import { createLead } from "./apicalls";
+import emailjs from '@emailjs/browser';
+
 
   
 const LeadForm=({setRun = f => f, run = undefined})=>{
@@ -22,6 +24,14 @@ const LeadForm=({setRun = f => f, run = undefined})=>{
     const handleCollection= ()=>event =>{
       setCollectionName(event.target.value)
     }
+
+    
+    var templateParams = {
+      name: name,
+      email: email,
+      phoneNo:phoneNo,
+      message:interest
+  };
      
     const clickSubmit=(event)=>{
       event.preventDefault();
@@ -33,6 +43,12 @@ const LeadForm=({setRun = f => f, run = undefined})=>{
           else{
               console.log(data);
              
+              emailjs.send('service_4rof0eg', 'template_0o4aici', templateParams,'gNDM0QR-RpPGiaEgl')
+              .then(function(response) {
+                 console.log('SUCCESS!', response.status, response.text);
+              }, function(error) {
+                 console.log('FAILED...', error);
+              });
               setSuccess(true)
           }
       })
