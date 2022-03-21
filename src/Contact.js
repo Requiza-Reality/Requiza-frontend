@@ -60,12 +60,12 @@ const Contact=()=>{
                <div className="col-11 col-md-9 mx-auto p-5" style={{backgroundColor:theme,opacity:"0.9"}}>
                
                 <div className="row">
-                    <div className="col my-auto p-3">
+                    <div className="col-12 col-md-6 my-auto p-3">
                         <p className="h1 text-warning text-center " style={{fontFamily:"'Aref Ruqaa', serif"}}>Our Expertise , Your Lifestyle</p>
                         <hr className="text-white d-md-none" />
 
                     </div>
-                    <div className="col ">
+                    <div className="col-12 col-md-6 ">
                     <p className="h2 text-warning text-center" style={{fontFamily:"'Aref Ruqaa', serif"}}>Contact Us</p>
                     {showSuccess()}
                     <form >
