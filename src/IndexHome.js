@@ -102,7 +102,7 @@ const IndexHome=(props)=>{
            <div className="row mt-5 p-3">
              <div className="col-12 col-md-6 mx-auto text-center">
               
-               <h1 className="text-white text-center mt-5" style={{fontFamily:"'Aref Ruqaa', serif"}}>Requiza Reality</h1>
+               <h1 className="text-white text-center mt-5" style={{fontFamily:"'Aref Ruqaa', serif"}}>Saksham</h1>
                <p className="text-white">
                Buying a home is one of the most crucial decisions and the most significant financial outlay in anybody's life. The REQUIZA REALITY makes your home journey simple by providing relevant information that helps you make an informed decision. From real estate news to the legalities of home buying to taxation and tips on home designing and improvement, this is your go-to source for everything real estate.               </p>
                <Link to="/projects" ><button className="btn btn-lg btn-warning ">View All Properties</button></Link>
